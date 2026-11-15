@@ -47,13 +47,13 @@ DROP TABLE students;
 
 6. Архитектура
 
-- Main, TablePrinter — консоль: читают запросы, печатают результат таблицей.
-- Parser — превращает текст запроса в объект-запрос.
-- Statement и 7 классов ...Statement — каждый выполняет свою команду (паттерн Command).
-- Database — набор таблиц, их изменение и сохранение (паттерн Repository).
-- TableStorage, FileTableStorage — запись и чтение файлов (паттерн DAO).
-- Table, Column, Row, DataType, Condition, Op, Index — данные, типы, условие, индекс.
-- Result, DbException, Benchmark — результат запроса, ошибки, замеры.
+- Main, TablePrinter — консоль: читают запросы, печатают результат таблицей
+- Parser — превращает текст запроса в объект-запрос
+- Statement и 7 классов ...Statement — каждый выполняет свою команду 
+- Database — набор таблиц, их изменение и сохранение 
+- TableStorage, FileTableStorage — запись и чтение файлов 
+- Table, Column, Row, DataType, Condition, Op, Index — данные, типы, условие, индекс
+- Result, DbException, Benchmark — результат запроса, ошибки, замеры
 
 Связи между классами 
 
